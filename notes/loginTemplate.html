@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<form action="" method="get" accept-charset="utf-8">
+		姓名：
+		<input id="input_name" type="text" name="user_name" value="" placeholder="请输入姓名">
+		密码：
+		<input id="input_pwd" type="password" name="user_pwd" value="" placeholder="请输入密码">
+		<input id="input_login" type="button" name="user_login" value="提交" >
+	</form>
+
+
+<script  type="text/javascript" charset="utf-8">
+
+
+
+
+
+
+
+
+function  login(){
+	user_login = document.getElementById("input_login");
+    user_login.onclick=function(){
+    	var userObj={
+		    name:document.getElementById("input_name").value,
+		    pwd:document.getElementById("input_pwd").value
+	    }
+	    var userStr="{name:"+userObj.name+",pwd:"+userObj.pwd+"}"
+	    var text = '{ "sites" : [' +
+    '{ "name":"Runoob" , "url":"www.runoob.com" },' +
+    '{ "name":"Google" , "url":"www.google.com" },' +
+    '{ "name":"Taobao" , "url":"www.taobao.com" } ]}';
+    
+obj = JSON.parse(text);
+console.log(obj);
+	    
+
+    }
+}
+
+login()
+
+   //将对象序列化
+    function params(data) {
+      var arg = [];
+      for (var i in data) {
+        arr.push(encodeURIComponent(i) + '=' + encodeURIComponent(data[i]));
+      }
+      return arr.join('&');
+    }
+//封装ajax
+    function ajax(obj) {
+      //创建xhr对象;
+      obj.xhr = new XMLHttpRequest();
+      //后面随机数防止浏览器缓存
+      obj.url = url + "?rand=" + Math.random();
+      //序列化对象
+      obj.data = params(obj.data);
+      //当是get请求时
+      if (obj.method = 'get') {
+        //当前面没设置随机数时
+        obj.url += obj.url.indexOf('?') == -1 ? '?' +obj.data : '&' + obj.data;
+      }
+      //异步调用
+      if (obj.async == true) {
+        //监听响应状态
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4) {
+            callback();
+          }
+        };
+      }
+      //启动HTTP请求
+      xhr.open(obj.method, obj.url, obj.aysnc);
+      //当是post请求时
+      if(obj.method === 'post') {
+        //模仿表单提交
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        //发送HTTP请求-post
+        xhr.send(obj.data);
+      } else {
+        //发送HTTP请求-get
+        xhr.send(null);
+      }
+      //同步调用
+      if (obj.async == false) {
+        callback();
+      }
+      //回调函数传参
+      function callback() {
+        if (xhr.atatus == 200) {
+          obj.success(xhr.responseText);
+        } else {
+          alert("失败，失败状态码：" + xhr.status);
+        }
+      }
+    }
+
+
+
+
+// 第一步： 获得XMLHttpRequest对象
+            var ajax = new XMLHttpRequest();
+            // 第二步： 设置状态监听函数
+            ajax.onreadystatechange = function(){
+                console.log(ajax.readyState);
+                console.log(ajax.status);
+                // 第五步：在监听函数中，判断readyState=4 && status=200表示请求成功
+                if(ajax.readyState==4 && ajax.status==200){
+                    // 第六步： 使用responseText、responseXML接受响应数据，并使用原生JS操作DOM进行显示
+                    console.log(ajax.responseText);
+                    console.log(ajax.responseXML);// 返回不是XML，显示null
+                    console.log(JSON.parse(ajax.responseText));
+                    console.log(eval("("+ajax.responseText+")"));
+                }
+            }
+ 
+
+
+</script>
+</body>
+</html>
