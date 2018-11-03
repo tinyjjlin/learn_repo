@@ -1,95 +1,98 @@
 #git 学习
 
+---
 安装使用配置
 
+什么是ss,sshkey？可以不用密码连接。
+
+win生成sshkey
+
 ```
-1配置
-配置你的用户名和密码
+ssh-keygen -t rsa -C "794549197@qq.ocm"
+```
+
+##1 git 配置
+1. 配置你的用户名和密码
+```
  git config --global user.name "wirelessqa"
  git config --global user.email wirelessqa.me@gmail.com
-配置客户端长期存储用户各和密码
-长期存储密码：
+```
+2. 配置客户端长期存储用户各和密码
+```
 git config --global credential.helper store
-
-配置你的比较工具
+```
+3. 配置你的比较工具
 git config --global merge.tool vimdiff
 
-检查你的配置
+4. 检查你的配置
+```
 git config --list
 ```
+##2. git 使用
 
-问题总结：
+###2.1
 
-1. git add 多个文件夹，多个文件
+ 使用情况：1本地项目上传到远程仓库中；2从远程仓库中拉取项目。
+
+1. 将本地项目上传到远程仓库
 ```
-git add  foldername1/ foldername2/
-git add  fielname1  filename2
-git add  *.type
+//获取远程仓库
+git remote add  [remote_respo_name] [remote_res_addrress]
+```
+2. 从远程仓库拉取项目
+```
+git clone [remote add]
+```
+3. 第一次推送master分支所有内容
+```
+git push -u [remote_respo_name] master
 ```
 
-
-
-
-
-
-
-##1 本地仓库关联远程仓库
+###2. 常用命令
+1. 查看远程仓库
 ```
-git remote add  [remote_resip_name] [remote_resip_addrress]
-git@github.com:jjskyblue/learnJava.git
-```
-##2 第一次推送master分支所有内容
-```
-git push -u [remote_resip_name] master
-```
-##3常用命令
-```
-1查看远程仓库
 git remote
 git remote -v
-
-2取消与远程仓库的关联
+```
+2. 取消与远程仓库的关联
+```
 git remote  remove  relative_origin
-
 ```
-3查看所有分支，包括远程仓库分支
+3. 查看所有分支，包括远程仓库分支
+```
 git branch -a
+```
 
-##4 git pull
-
+##3 git pull 使用
 [git pull 详细说明](https://www.yiibai.com/git/git_pull.html)
-```
-git pull --rebase
-```
-##5 git push
-```
-1 push 到远程指定的分支上
-git push --set-upstream java_origin master
-2pubsh到远程仓库，并创建分支，如果分支不存在
-git push  -u remote_resip_Name  remote_branch
-```
 
-##6实现本地分支与远程分支的关联
+ ``git pull``相当于(``git fetch``,``git merge``)
+
+``git pull --rebase``详细使用？
+
+
+##4 git push 使用
+
+---
+1. 本地的代码替换git仓库内容
+
+`` git push -f  ``
+
+2. push 到远程指定的分支上
+ 
+``git push --set-upstream java_origin master``
+
+3. pubsh到远程仓库，并创建分支，如果分支不存在
+
+``git push  -u remote_respo_Name  remote_branch``
+
+
+##5 实现本地分支与远程分支的关联
 ```
 git branck --track  loacal_branch  remote/remote_branch
-
 ```
 
-问题:
-当提交的时候，在远程分支上有我们本地分支上没有的内容（提交）push会失败。
-解决：
-
-1. 设定本地上游分支
-
-git branch --set-upstream-to=remote_resip/remote_branch
-
-2. pull (fetch and merge)相当于更新操作。
-
-3. git pull -rebase
-
-4. git push
-
-##7 分支操作
+##6 分支操作
 1. 创建分支
 ```
 //1基于master创建分支，在master上创建分支
@@ -137,15 +140,7 @@ git merge --no-ff develop
 
 ```
 
-##8 ssh
-什么是ss,sshkey
-
-1. 生成sshkey
-```
-ssh-keygen -t rsa -C "794549197@qq.ocm"
-```
-
-##9 git non-fast-forward冲突解决
+##7 git non-fast-forward冲突解决
 解决：
 
 1 分支关联：
@@ -165,17 +160,13 @@ git config branch.master.merge refs/heads/master
 
 ```
 
-2 ``git pull``(``git fetch``,``git merge``)
 
+## 8 git 查看分支合并图
 
-3 ``git push``
-
-`` git push -f  ``,本地的代码替换git仓库内容
-
-## 10 git 查看分支合并图
+---
 ``git log --graph``
 
-##11 解决bug,回到正在做的工作现场
+##9  解决bug,回到正在做的工作现场
 
 1. 保存当前的修改的内容，工作现场，因为还没有提交到仓库。
 
@@ -193,8 +184,6 @@ git commit
 
 git checkout master
 git merge --no--ff -m "merge inform"  issue-001
-
-
 ```
 
 3. 返回现场
@@ -208,7 +197,7 @@ git stash pop
 git stash apply
 ```
 
-##12.分支操作
+##10.分支操作
 
 1. 本地创建分支，并上传分支到远程仓库
 ```
@@ -236,25 +225,25 @@ git checkout -b dev origin/dev
 git push origin dev
 ```
 
-## 13.冲突解决
+## 11.冲突解决
 
 发生的情况：dev分支上有两个分支，dev_01,dev_02,当dev_01合并分支到dev
 上，然后dev_02也想合并到dev上时，发生冲突。这时需要冲突解决。
 
 重点冲突的解决是在dev分支下，add,commit
 
-##14.查看具体文件的修改
+##12.查看具体文件的修改
 
 1. 以图形化的界面显示文件的修改
 
 `` gitk --follow filename``
 
-## 15查看log
+##13 查看log
 ```
 //更友好的显示
 git log --pretty=oneline --abbrev-commit
 ```
-##15. 标签管理
+##14 标签管理
 
 命令git push origin <tagname>可以推送一个本地标签；
 
@@ -296,4 +285,29 @@ git push origin :refs/tags/v0.9
  git push origin taganme
  git push origin --tags
 
- ```
+```
+
+
+#问题总结：
+####1 git add 多个文件夹，多个文件
+```
+git add  foldername1/ foldername2/
+git add  fielname1  filename2
+git add  *.type
+//add 所以文件
+git add -A
+git add .
+```
+
+####2 当提交的时候，在远程分支上有我们本地分支上没有的内容（提交）push会失败。
+解决：
+
+1. 设定本地上游分支
+
+git branch --set-upstream-to=remote_respo/remote_branch
+
+2. pull (fetch and merge)相当于更新操作。
+
+3. git pull -rebase
+
+4. git push
