@@ -1,6 +1,6 @@
 # git 学习
 
----
+--------------------------------------
 安装使用配置
 
 什么是ss,sshkey？可以不用密码连接。
@@ -11,7 +11,9 @@ win生成sshkey
 ssh-keygen -t rsa -C "794549197@qq.ocm"
 ```
 
-##1 git 配置
+## 1 git 配置
+
+-------------------------------------
 1. 配置你的用户名和密码
 ```
  git config --global user.name "wirelessqa"
@@ -28,9 +30,11 @@ git config --global merge.tool vimdiff
 ```
 git config --list
 ```
-##2. git 使用
+## 2 git 使用
 
-###2.1
+-----------------------------------
+
+### 2.1
 
  使用情况：1本地项目上传到远程仓库中；2从远程仓库中拉取项目。
 
@@ -48,7 +52,7 @@ git clone [remote add]
 git push -u [remote_respo_name] master
 ```
 
-###2. 常用命令
+### 3 常用命令
 1. 查看远程仓库
 ```
 git remote
@@ -63,7 +67,7 @@ git remote  remove  relative_origin
 git branch -a
 ```
 
-##3 git pull 使用
+## 4 git pull 使用
 [git pull 详细说明](https://www.yiibai.com/git/git_pull.html)
 
  ``git pull``相当于(``git fetch``,``git merge``)
@@ -71,7 +75,7 @@ git branch -a
 ``git pull --rebase``详细使用？
 
 
-##4 git push 使用
+## 5 git push 使用
 
 ---
 1. 本地的代码替换git仓库内容
@@ -87,12 +91,12 @@ git branch -a
 ``git push  -u remote_respo_Name  remote_branch``
 
 
-##5 实现本地分支与远程分支的关联
+## 6 实现本地分支与远程分支的关联
 ```
 git branck --track  loacal_branch  remote/remote_branch
 ```
 
-##6 分支操作
+## 7 分支操作
 1. 创建分支
 ```
 //1基于master创建分支，在master上创建分支
@@ -140,7 +144,7 @@ git merge --no-ff develop
 
 ```
 
-##7 git non-fast-forward冲突解决
+## 8git non-fast-forward冲突解决
 解决：
 
 1 分支关联：
@@ -161,12 +165,12 @@ git config branch.master.merge refs/heads/master
 ```
 
 
-## 8 git 查看分支合并图
+## 9 git 查看分支合并图
 
 ---
 ``git log --graph``
 
-##9  解决bug,回到正在做的工作现场
+## 10 解决bug,回到正在做的工作现场
 
 1. 保存当前的修改的内容，工作现场，因为还没有提交到仓库。
 
@@ -197,7 +201,7 @@ git stash pop
 git stash apply
 ```
 
-##10.分支操作
+## 11分支操作
 
 1. 本地创建分支，并上传分支到远程仓库
 ```
@@ -225,25 +229,25 @@ git checkout -b dev origin/dev
 git push origin dev
 ```
 
-## 11.冲突解决
+## 12冲突解决
 
 发生的情况：dev分支上有两个分支，dev_01,dev_02,当dev_01合并分支到dev
 上，然后dev_02也想合并到dev上时，发生冲突。这时需要冲突解决。
 
 重点冲突的解决是在dev分支下，add,commit
 
-##12.查看具体文件的修改
+## 13查看具体文件的修改
 
 1. 以图形化的界面显示文件的修改
 
 `` gitk --follow filename``
 
-##13 查看log
+## 14查看log
 ```
 //更友好的显示
 git log --pretty=oneline --abbrev-commit
 ```
-##14 标签管理
+## 15 标签管理
 
 命令git push origin <tagname>可以推送一个本地标签；
 
@@ -288,8 +292,10 @@ git push origin :refs/tags/v0.9
 ```
 
 
-#问题总结：
-####1 git add 多个文件夹，多个文件
+# 问题总结：
+
+------------------------------
+#### 1 git add 多个文件夹，多个文件
 ```
 git add  foldername1/ foldername2/
 git add  fielname1  filename2
@@ -299,7 +305,7 @@ git add -A
 git add .
 ```
 
-####2 当提交的时候，在远程分支上有我们本地分支上没有的内容（提交）push会失败。
+#### 2 当提交的时候，在远程分支上有我们本地分支上没有的内容（提交）push会失败。
 解决：
 
 1. 设定本地上游分支
