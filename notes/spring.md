@@ -5,3 +5,8 @@
 
 
 ```
+
+## 2. spring  容器扩展点
+BeanPostProcessor
+BeanFactoryPostProcessor
+FactoryBean
