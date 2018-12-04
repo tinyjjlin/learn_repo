@@ -316,3 +316,28 @@ git branch --set-upstream-to=remote_respo/remote_branch
 3. git pull -rebase
 
 4. git push
+
+### 3 git merge 
+3.1 远程别人分支上的代码，合并到master上
+
+Git鼓励大量使用分支：
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
+
+    根据远程分支，创建本地分支并关联
+
+
+    根据本地分支，创建远程分支并关联
+
+### 4 合并两个仓库
+git pull origin master --allow-unrelated-histories
+
+### 5 本地创建新分支，关联远程新分支，并创建远程新分支，从主分支拉去代码
+```
+git push  origin dev
+```

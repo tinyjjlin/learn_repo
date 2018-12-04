@@ -32,3 +32,8 @@ on P.id = RP.permi_id
 left join brs_role as R
 on R.id = RP.role_id
 where R.code ="01"
+
+select br.role_no,br.name,br.description,br.available from brs_role as br 
+left join brs_user_role as bru 
+on bru.role_no = br.role_no
+where bru.user_emp_no =
