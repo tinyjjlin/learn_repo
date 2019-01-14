@@ -1,0 +1,2193 @@
+= 贝若偲OA系统 后台服务接口
+
+
+[[_overview]]
+== Overview
+API 描述
+
+
+=== Version information
+[%hardbreaks]
+__Version__ : 1.0
+
+
+=== Contact information
+[%hardbreaks]
+__Contact__ : tiny lin
+
+
+=== URI scheme
+[%hardbreaks]
+__Host__ : localhost:8080
+__BasePath__ : /
+
+
+=== Tags
+
+* department-controller : Department Controller
+* home-controller : Home Controller
+* login-controller : Login Controller
+* permission-controller : Permission Controller
+* role-controller : Role Controller
+* salary-monthly-controller : Salary Monthly Controller
+* staff-controller : Staff Controller
+* vo-field-controller : Vo Field Controller
+
+
+
+
+[[_paths]]
+== Paths
+
+[[_viewusingget]]
+=== 查看公司所有部门信息
+....
+GET /api/departments
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* department-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/departments
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_editoneusingpatch]]
+=== 管理员修改部门信息
+....
+PATCH /api/departments
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Body**|**department** +
+__required__|department|<<_department,Department>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* department-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/departments
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request body
+[source,json]
+----
+{
+  "deptName" : "string",
+  "deptNo" : 0,
+  "id" : 0,
+  "parentNo" : 0
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_addmutilusingpost]]
+=== 管理员添加多个新的部门
+....
+POST /api/departments/more
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Body**|**departmentList** +
+__required__|departmentList|< <<_department,Department>> > array
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* department-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/departments/more
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request body
+[source,json]
+----
+[ {
+  "deptName" : "string",
+  "deptNo" : 0,
+  "id" : 0,
+  "parentNo" : 0
+} ]
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_deletemultiusingdelete]]
+=== 管理员一次删除多个部门
+....
+DELETE /api/departments/more
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Body**|**deptNoSet** +
+__required__|deptNoSet|< integer (int32) > array
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* department-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/departments/more
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request body
+[source,json]
+----
+[ 0 ]
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_addoneusingpost]]
+=== 管理员添加一个新的部门
+....
+POST /api/departments/one
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Body**|**department** +
+__required__|department|<<_department,Department>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* department-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/departments/one
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request body
+[source,json]
+----
+{
+  "deptName" : "string",
+  "deptNo" : 0,
+  "id" : 0,
+  "parentNo" : 0
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_deleteusingdelete]]
+=== 管理员删除一个部门
+....
+DELETE /api/departments/one
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Query**|**deptNo** +
+__required__|deptNo|integer (int32)
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* department-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/departments/one
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request query
+[source,json]
+----
+{
+  "deptNo" : 0
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_stafflistfromdepartmentusingget]]
+=== 分页查看指定部门的员工基本信息
+....
+GET /api/departments/{departmentId}/staffs
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4,.^2"]
+|===
+|Type|Name|Description|Schema|Default
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string|
+|**Path**|**departmentId** +
+__required__|指定部门编号|integer (int32)|
+|**Query**|**page** +
+__optional__|要查看的页数|integer (int32)|`1`
+|**Query**|**size** +
+__optional__|每页显示的数据行数|integer (int32)|`10`
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* staff-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/departments/0/staffs
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request query
+[source,json]
+----
+{
+  "page" : 0,
+  "size" : 0
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_homeusingget]]
+=== home
+....
+GET /api/home
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* home-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/home
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_loginusingpost]]
+=== 用户登录
+....
+POST /api/login
+....
+
+
+==== Description
+用户名，密码就是登录计算机账号密码
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Body**|**loginDto** +
+__required__|loginDto|<<_logindto,LoginDto>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* login-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/login
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request body
+[source,json]
+----
+{
+  "password" : "string",
+  "username" : "string"
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_userinfousingget]]
+=== 获取登录用户基本信息
+....
+GET /api/login/userInfo
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__required__|Authorization|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* login-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/login/userInfo
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_logoutusingget]]
+=== 退出系统
+....
+GET /api/logout
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* login-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/logout
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_getpermissionusingget]]
+===  获取当前用户所有权限列表
+....
+GET /api/permissions
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__required__|用户登录或获取的token值|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* permission-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/permissions
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_searchpersonalsalarylistusingget]]
+=== 我的薪资记录
+....
+GET /api/personal/salaries
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4,.^2"]
+|===
+|Type|Name|Description|Schema|Default
+|**Header**|**Authorization** +
+__required__|Authorization|string|
+|**Query**|**endTime** +
+__optional__|endTime|string (date)|
+|**Query**|**limit** +
+__optional__|每页显示的行数|integer (int32)|`10`
+|**Query**|**page** +
+__optional__|要查看的页数|integer (int32)|`1`
+|**Query**|**startTime** +
+__optional__|startTime|string (date)|
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* salary-monthly-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/personal/salaries
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request query
+[source,json]
+----
+{
+  "endTime" : "string",
+  "limit" : 0,
+  "page" : 0,
+  "startTime" : "string"
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_viewusingget_1]]
+=== 查看角色列表
+....
+GET /api/roles
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* role-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/roles
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_editusingpatch]]
+=== 编辑角色信息
+....
+PATCH /api/roles
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Body**|**roleVo** +
+__required__|roleVo|<<_rolevo,RoleVo>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* role-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/roles
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request body
+[source,json]
+----
+{
+  "available" : 0,
+  "description" : "string",
+  "name" : "string",
+  "permissionList" : [ 0 ],
+  "roleNo" : 0
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_addusingpost]]
+=== 添加新的角色
+....
+POST /api/roles/one
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Body**|**roleVo** +
+__required__|roleVo|<<_rolevo,RoleVo>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* role-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/roles/one
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request body
+[source,json]
+----
+{
+  "available" : 0,
+  "description" : "string",
+  "name" : "string",
+  "permissionList" : [ 0 ],
+  "roleNo" : 0
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_searchstaffsalarylistusingget]]
+=== 财务组查看员工薪资记录
+....
+GET /api/salaries/search
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4,.^2"]
+|===
+|Type|Name|Description|Schema|Default
+|**Header**|**Authorization** +
+__required__|Authorization|string|
+|**Query**|**endTime** +
+__optional__|截止月份|string (date)|
+|**Query**|**limit** +
+__optional__|每页显示的行数|integer (int32)|`10`
+|**Query**|**page** +
+__optional__|要查看的页数|integer (int32)|`1`
+|**Query**|**staffId** +
+__optional__|员工工号|integer (int32)|
+|**Query**|**startTime** +
+__optional__|开始月份|string (date)|
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* salary-monthly-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/salaries/search
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request query
+[source,json]
+----
+{
+  "endTime" : "string",
+  "limit" : 0,
+  "page" : 0,
+  "staffId" : 0,
+  "startTime" : "string"
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_stafflistfromcompanyusingget]]
+=== 分页查看公司所有员工的基本信息
+....
+GET /api/staffs
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4,.^2"]
+|===
+|Type|Name|Description|Schema|Default
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string|
+|**Query**|**limit** +
+__optional__|每页显示的数据行数|integer (int32)|`10`
+|**Query**|**page** +
+__optional__|要查看的页数|integer (int32)|`1`
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* staff-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/staffs
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request query
+[source,json]
+----
+{
+  "limit" : 0,
+  "page" : 0
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_eidtpersonalinfousingpatch]]
+=== 员工编辑个人详细信息
+....
+PATCH /api/staffs/info
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__required__|token值|string
+|**Body**|**staffDetailVo** +
+__required__|staffDetailVo|<<_staffdetailvo,StaffDetailVo>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* staff-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/staffs/info
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request body
+[source,json]
+----
+{
+  "address" : "string",
+  "birthday" : "string",
+  "currentAddress" : "string",
+  "deptNo" : 0,
+  "email" : "string",
+  "empNo" : 0,
+  "gender" : 0,
+  "gmtCreate" : "string",
+  "gmtModified" : "string",
+  "highestDegree" : "string",
+  "hireDate" : "string",
+  "maritalStatus" : "string",
+  "mobile" : "string",
+  "name" : "string",
+  "nation" : "string",
+  "nationIdcard" : "string",
+  "picture" : "string",
+  "politicsStatus" : "string",
+  "position" : "string"
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_searchstaffbyempnameusingget]]
+=== 根据员工姓名查看指定员工的基本信息
+....
+GET /api/staffs/name/{staffName}
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__required__|Authorization|string
+|**Path**|**staffName** +
+__required__|员工姓名|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* staff-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/staffs/name/string
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_searchstaffinfousingget]]
+=== 根据员工姓名， 查看员工的详细信息
+....
+GET /api/staffs/name/{staffName}/info
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Path**|**staffName** +
+__required__|员工姓名|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* staff-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/staffs/name/string/info
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_searchpersonalinfousingget]]
+=== 员工查看个人的详细信息
+....
+GET /api/staffs/personal/info
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__required__|用户登录或获取的token值|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* staff-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/staffs/personal/info
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_searchstaffbyempnousingget]]
+=== 根据员工工号查看指定员工的基本信息
+....
+GET /api/staffs/{staffId}
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Path**|**staffId** +
+__required__|指定员工号|integer (int32)
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* staff-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/staffs/0
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_searchstaffinfousingget_1]]
+===  根据员工工号，查看员工的详细信息
+....
+GET /api/staffs/{staffId}/info
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Path**|**staffId** +
+__required__|员工工号|integer (int32)
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* staff-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/staffs/0/info
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+[[_searchvofieldusingget]]
+=== 查看指定视图数据字段
+....
+GET /api/voFields/{voName}
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Header**|**Authorization** +
+__optional__|用户登录后获取的token,将其写入请求头部Authorization字段中|string
+|**Query**|**voName** +
+__required__|视图数据模型名称|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_restfulresult,RestfulResult>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* vo-field-controller
+
+
+==== Example HTTP request
+
+===== Request path
+----
+/api/voFields/{voName}
+----
+
+
+===== Request header
+[source,json]
+----
+"string"
+----
+
+
+===== Request query
+[source,json]
+----
+{
+  "voName" : "string"
+}
+----
+
+
+==== Example HTTP response
+
+===== Response 200
+[source,json]
+----
+{
+  "code" : 0,
+  "data" : "object",
+  "msg" : "string"
+}
+----
+
+
+
+
+[[_definitions]]
+== Definitions
+
+[[_department]]
+=== Department
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**deptName** +
+__optional__|**Example** : `"string"`|string
+|**deptNo** +
+__optional__|**Example** : `0`|integer (int32)
+|**id** +
+__optional__|**Example** : `0`|integer (int32)
+|**parentNo** +
+__optional__|**Example** : `0`|integer (int32)
+|===
+
+
+[[_logindto]]
+=== LoginDto
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**password** +
+__optional__|**Example** : `"string"`|string
+|**username** +
+__optional__|**Example** : `"string"`|string
+|===
+
+
+[[_restfulresult]]
+=== RestfulResult
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**code** +
+__optional__|**Example** : `0`|integer (int32)
+|**data** +
+__optional__|**Example** : `"object"`|object
+|**msg** +
+__optional__|**Example** : `"string"`|string
+|===
+
+
+[[_rolevo]]
+=== RoleVo
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**available** +
+__optional__|**Example** : `0`|integer (int32)
+|**description** +
+__optional__|**Example** : `"string"`|string
+|**name** +
+__optional__|**Example** : `"string"`|string
+|**permissionList** +
+__optional__|**Example** : `[ 0 ]`|< integer (int32) > array
+|**roleNo** +
+__optional__|**Example** : `0`|integer (int32)
+|===
+
+
+[[_staffdetailvo]]
+=== StaffDetailVo
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**address** +
+__optional__|**Example** : `"string"`|string
+|**birthday** +
+__optional__|**Example** : `"string"`|string (date)
+|**currentAddress** +
+__optional__|**Example** : `"string"`|string
+|**deptNo** +
+__optional__|**Example** : `0`|integer (int32)
+|**email** +
+__optional__|**Example** : `"string"`|string
+|**empNo** +
+__optional__|**Example** : `0`|integer (int32)
+|**gender** +
+__optional__|**Example** : `0`|integer (int32)
+|**gmtCreate** +
+__optional__|**Example** : `"string"`|string (date-time)
+|**gmtModified** +
+__optional__|**Example** : `"string"`|string (date-time)
+|**highestDegree** +
+__optional__|**Example** : `"string"`|string
+|**hireDate** +
+__optional__|**Example** : `"string"`|string (date)
+|**maritalStatus** +
+__optional__|**Example** : `"string"`|string
+|**mobile** +
+__optional__|**Example** : `"string"`|string
+|**name** +
+__optional__|**Example** : `"string"`|string
+|**nation** +
+__optional__|**Example** : `"string"`|string
+|**nationIdcard** +
+__optional__|**Example** : `"string"`|string
+|**picture** +
+__optional__|**Example** : `"string"`|string
+|**politicsStatus** +
+__optional__|**Example** : `"string"`|string
+|**position** +
+__optional__|**Example** : `"string"`|string
+|===
+
+
+
+
+

@@ -1,0 +1,95 @@
+#tomcat server port
+server:
+  port: 8080
+  address: 172.18.101.114
+
+
+
+#ldap配置信息，注意这里的userDn一定要写这种形式。referral设置为follow，连接AD时才需要配置
+ldap:
+  url: ldap://172.18.19.1:389
+  userDn: CN=Administrator,CN=Users,DC=brs,DC=dev
+  userPwd: Brs2017
+  referral: follow
+  domainName: '@brs.dev'
+  base: OU=Onestep,DC=brs,DC=dev
+
+# mybatis config
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+ # type-aliases-package: com.brs.oa.*.vo
+
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  datasource:
+    name: mysql
+    type: com.alibaba.druid.pool.DruidDataSource
+    # driverClassName: com.mysql.jdbc.Driver
+    # driver-class-name: com.mysql.jdbc.Driver
+    platform: mysql
+    url: jdbc:mysql://172.18.19.2:4000/brs_oa_sys?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: beiruosi
+    password: Brs2017
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT1FROMDUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    filters: stat,wall
+    logSlowSql: true
+    driver-class-name:
+
+  redis:
+    database: 0
+    host: localhost
+    password:
+    port: 6379
+    timeout: 5000ms
+    lettuce:
+      pool:
+        max-wait:
+  devtools:
+    remote:
+      restart:
+        enabled: true
+    restart:
+      additional-exclude: WEB-INF/**
+      additional-paths: src/main/java
+
+
+
+
+# page plugin
+pagehelper:
+  # dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+#token config
+token:
+  request-header: Authorization
+  secret: tiny
+  expire-time-minute:  30
+  name: token
+  claim:
+    emp-no:  emp_no
+    login-name: login_name
+
+# file service
+fileservice:
+      upload-file-dir: classpath:upload/image
+      dowload-file-dir: classpath:dowload/image
+
+#file upload size set:
+
