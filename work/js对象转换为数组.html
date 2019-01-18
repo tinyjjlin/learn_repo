@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		let data ={"2018-12-14":{"dayType":0},"2018-12-13":{"dayType":0},"2018-12-12":{"dayType":0}}
+
+        let arr =[]
+		for (var i in data) {
+             console.log(i)
+             console.log(data[i])
+             let item = i;
+             let b = item.lastIndexOf('-')
+             let v = item.substring(b+1)
+             console.log(v)
+             arr[v] = {
+             	itme:i,
+             	data:data[i]
+             }
+             console.log('arrr======>'+ JSON.stringify(arr[v]))
+         }
+
+        
+
+
+	</script>
+</body>
+</html>
