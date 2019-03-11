@@ -1,4 +1,70 @@
 #mysql
+
+```
+#create database
+create database |schema if not exists db_name
+
+default character set utf8
+default collate uti8_general_ci
+alter database tiny_news default character set utf8;
+
+#create table 
+
+create table if not exists news_brief(
+    nb_id int unsigned auto_increment not null,
+    nb_title varchar(50) not null,
+    nb_from varchar(50),
+    nb_refresh_time timestamp,
+    nb_plot_url varchar(100),
+    nb_detail int ,
+    nb_type int,
+    nb_category int,
+    primary key(nb_id)
+  )engine=innodb default charset=utf8;
+
+create table if not exists news_detail(
+    nd_id int unsigned auto_increment not null,
+    nd_content text not null,
+    primary key(nd_id)
+  )engine=innodb default charset=utf8;
+#查看表结构，表创建sql
+desc table_name;
+show create table table_name;
+#设置外键
+FOREIGN KEY(c_id) REFERENCES t_class(id)
+alter table news_brief add constraint detail_foreign_key foreign key(nb_detail) references news_detail(nd_id);
+#删除外键
+alter table drop foreign key 外键名;   
+#修改列
+alter table news_brief modify nb_detail int(10);
+alter table test rename test1; --修改表名  
+
+ # 列重命名
+ alter table news_brief change nb_detail detail_id int(10) unsigned;
+
+alter table test add  column name varchar(10); --添加表列   
+alter table test drop  column name; --删除表列  
+alter table test modify address char(10) --修改表列类型  
+||alter table test change address address  char(40) 
+
+#查看约束
+show index from news_brief;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##1 mysql 用户设置
 ```
 use mysql;
