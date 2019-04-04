@@ -341,3 +341,34 @@ git pull origin master --allow-unrelated-histories
 ```
 git push  origin dev
 ```
+
+#### 查看本地分支和远程分支的跟踪关系
+
+git branch -vv
+
+#### 查看某个文件修改记录
+```
+git log --pretty=oneline 文件名
+
+git show commit_id  文件路径
+```
+
+#### 拉取远程指定分支
+```
+git pull origin dev:dev
+```
+
+#### 本地上传到远程指定分支
+```
+
+```
+
+### git push
+git push <远程主机名> <本地分支名>  <远程分支名>
+
+# git 用法总结
+
+## git add 
+1. git add <path> 说明： add to index only files created or modified and not those deleted 。不包括删除的文件。
+2. git add -u [<path>] 说明：add to index only files modified or deleted and not those created .不处理untracted文件。
+3. git add -A [<Path>]
