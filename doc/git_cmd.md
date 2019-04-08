@@ -372,3 +372,36 @@ git push <远程主机名> <本地分支名>  <远程分支名>
 1. git add <path> 说明： add to index only files created or modified and not those deleted 。不包括删除的文件。
 2. git add -u [<path>] 说明：add to index only files modified or deleted and not those created .不处理untracted文件。
 3. git add -A [<Path>]
+
+## git 合并远程分支
+git  创建远程分支的本地分支，并关联本地分支和远程分支
+git checkout -b dev origin/dev
+
+拉取远程指定分支
+git pull origin dev
+
+git checout master
+git merge dev
+git push origin master
+
+git branch
+git branch -d dev
+git branch -D dev #强制删除分支
+
+git push origin :dev
+git push origin --delete dev
+
+## git  创建远程分支
+git branch -a 
+
+查看所有分支
+
+git checkout -b test01
+
+创建本地test01分支
+
+git push --set-upstream origin test01
+
+把本地test01分支推送到远程
+
+git push origin dev:dev
