@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.brs.oa.holidayschedule.mapper.HolidayScheduleMapper">
+
+    <sql id="holiday-sql">
+          h_day,
+          h_type,
+          h_festival
+
+    </sql>
+    <select id="selectListByMonth" resultType="com.brs.oa.holidayschedule.entity.HolidaySchedule">
+
+        SELECT
+            <include refid="holiday-sql"></include>
+        FROM
+            holiday_schedule
+        WHERE
+            month(h_day)= selectedMonth
+
+    </select>
+</mapper>

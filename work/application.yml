@@ -1,0 +1,8 @@
+# AD Config
+ldap:
+  url: "ldap://"
+  base: DC=
+  userDn: ""
+  userPwd: 
+  referral: 
+  domainName: ""

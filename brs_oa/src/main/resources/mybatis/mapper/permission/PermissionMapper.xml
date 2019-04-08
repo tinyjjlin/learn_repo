@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.brs.oa.permission.mapper.PermissionMapper">
+
+
+    <sql id="permission_sql">
+        p.permission_no,
+        permission_name,
+        permission_code,
+        p.is_enabled
+    </sql>
+
+    <sql id="where_emp_no">
+        <trim prefix="WHERE">
+        <if test="empNo != null"> emp_no=#{empNo}</if>
+        </trim>
+    </sql>
+
+    <sql id="where_role_no">
+        <trim prefix="WHERE">
+            <if test="roleNo != null"> role.role_no=#{roleNo}</if>
+        </trim>
+    </sql>
+    <sql id="where_permission_no">
+        <trim prefix="WHERE">
+            <if test="permissionNo != null"> permission_no=#{permissionNo}</if>
+        </trim>
+    </sql>
+
+
+
+
+    <select id="selectPermissionListByEmp" resultType="com.brs.oa.permission.entity.Permission">
+        SELECT
+            <include refid="permission_sql"></include>
+        FROM
+            permission as p
+        LEFT JOIN
+            role_permission_relation as rpr
+        ON
+            rpr.permission_no = p.permission_no
+        LEFT JOIN
+            role
+        ON
+            rpr.role_no = role.role_no
+        LEFT JOIN
+            staff_role_relation as srr
+        ON
+            role.role_no = srr.role_no
+        <include refid="where_emp_no"></include>
+
+    </select>
+    <select id="selectPermissionListByRole" resultType="com.brs.oa.permission.entity.Permission">
+        SELECT
+        <include refid="permission_sql"></include>
+        FROM
+        permission as p
+        LEFT JOIN
+        role_permission_relation as rpr
+        ON
+        rpr.permission_no = p.permission_no
+        LEFT JOIN
+        role
+        ON
+        rpr.role_no = role.role_no
+
+        <include refid="where_role_no"></include>
+
+    </select>
+    <select id="selectPermissionList" resultType="com.brs.oa.permission.entity.Permission">
+        SELECT
+        <include refid="permission_sql"></include>
+        FROM
+        permission as p
+        <include refid="where_permission_no"></include>
+
+
+
+    </select>
+
+    <insert id="insert">
+        INSERT  INTO
+            permission
+          (permission_no, permission_name,is_enabled,permission_code)
+          VALUES (
+          #{permission.permissionNo},
+          #{permission.permissionName},
+          #{permission.isEnabled},
+          #{permission.permissionCode}
+          )
+
+    </insert>
+
+    <update id="update">
+        UPDATE  permission
+        SET
+            permission_name =  #{permission.permissionName},
+            permission_code =  #{permission.permissionCode},
+            is_enabled = #{permission.isEnabled}
+        WHERE
+            permission_no = #{permission.permissionNo}
+    </update>
+
+
+    <delete id="delete">
+        DELETE  FROM permission
+        WHERE permission_no =#{permissionNo}
+    </delete>
+</mapper>

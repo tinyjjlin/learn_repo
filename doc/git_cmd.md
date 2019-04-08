@@ -294,8 +294,7 @@ git push origin :refs/tags/v0.9
 
 # 问题总结：
 
-------------------------------
-#### 1 git add 多个文件夹，多个文件
+-----------------------------#### 1 git add 多个文件夹，多个文件
 ```
 git add  foldername1/ foldername2/
 git add  fielname1  filename2
@@ -317,3 +316,92 @@ git branch --set-upstream-to=remote_respo/remote_branch
 3. git pull -rebase
 
 4. git push
+
+### 3 git merge 
+3.1 远程别人分支上的代码，合并到master上
+
+Git鼓励大量使用分支：
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
+
+    根据远程分支，创建本地分支并关联
+
+
+    根据本地分支，创建远程分支并关联
+
+### 4 合并两个仓库
+git pull origin master --allow-unrelated-histories
+
+### 5 本地创建新分支，关联远程新分支，并创建远程新分支，从主分支拉去代码
+```
+git push  origin dev
+```
+
+#### 查看本地分支和远程分支的跟踪关系
+
+git branch -vv
+
+#### 查看某个文件修改记录
+```
+git log --pretty=oneline 文件名
+
+git show commit_id  文件路径
+```
+
+#### 拉取远程指定分支
+```
+git pull origin dev:dev
+```
+
+#### 本地上传到远程指定分支
+```
+
+```
+
+### git push
+git push <远程主机名> <本地分支名>  <远程分支名>
+
+# git 用法总结
+
+## git add 
+1. git add <path> 说明： add to index only files created or modified and not those deleted 。不包括删除的文件。
+2. git add -u [<path>] 说明：add to index only files modified or deleted and not those created .不处理untracted文件。
+3. git add -A [<Path>]
+
+## git 合并远程分支
+git  创建远程分支的本地分支，并关联本地分支和远程分支
+git checkout -b dev origin/dev
+
+拉取远程指定分支
+git pull origin dev
+
+git checout master
+git merge dev
+git push origin master
+
+git branch
+git branch -d dev
+git branch -D dev #强制删除分支
+
+git push origin :dev
+git push origin --delete dev
+
+## git  创建远程分支
+git branch -a 
+
+查看所有分支
+
+git checkout -b test01
+
+创建本地test01分支
+
+git push --set-upstream origin test01
+
+把本地test01分支推送到远程
+
+git push origin dev:dev

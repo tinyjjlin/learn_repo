@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.brs.oa.department.mapper.DepartmentMapper">
+
+
+    <sql id="dept_sql">
+        id AS deptId,
+        dept_no,
+        dept_name,
+        parent_no
+    </sql>
+
+    <sql id="dept_staff_sql">
+        department.id AS deptId,
+        department.dept_no,
+        dept_name,
+        parent_no,
+
+        staff.id AS staffId,
+        staff.emp_no,
+        staff.name
+    </sql>
+
+    <insert id="insert">
+         INSERT INTO department
+         (dept_no, dept_name, parent_no)
+         VALUES (
+           #{dept.deptNo},
+           #{dept.deptName},
+           #{dept.parentNo}
+         )
+
+    </insert>
+    <update id="update">
+        UPDATE  department
+        SET
+
+           dept_name = #{dept.deptName},
+           parent_no =  #{dept.parentNo}
+          WHERE
+            dept_no = #{dept.deptNo}
+
+    </update>
+
+    <delete id="delete">
+         DELETE  FROM department
+         WHERE  dept_no = #{deptNo}
+
+    </delete>
+
+    <select id="selectList" resultType="com.brs.oa.department.entity.Department">
+        SELECT
+         <include refid="dept_sql"></include>
+         FROM department
+
+    </select>
+
+    <resultMap id="deptMap" type="com.brs.oa.department.vo.DepartmentVo" autoMapping="true">
+        <id property="deptId" column="deptId"></id>
+        <collection property="staffList" ofType="com.brs.oa.staff.entity.Staff" autoMapping="true">
+            <id property="staffId" column="staffId"></id>
+        </collection>
+    </resultMap>
+
+    <select id="selectDepartmentVoList" resultMap="deptMap">
+        SELECT
+            <include refid="dept_staff_sql"></include>
+        FROM department
+        LEFT  JOIN staff
+        ON staff.dept_no = department.dept_no
+    </select>
+</mapper>

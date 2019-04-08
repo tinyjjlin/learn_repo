@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.brs.oa.salary.mapper.SocialInsuranceInfoMapper">
+    <sql id="insert-column">
+        settlement_day,
+        emp_no,
+        p_pension,
+        c_pension,
+        p_medical,
+        c_medical,
+        p_unemployment,
+        c_unemployment,
+        c_industrial_injury,
+        c_maternity,
+        p_housing_found,
+        c_housing_found
+
+    </sql>
+    <insert id="insertList">
+        INSERT  INTO social_insurance_info
+        ( <include refid="insert-column"></include> )
+        VALUES
+        <foreach collection="list" item="info" index="index" separator=",">
+            (
+            #{info.settlementDay},
+            #{info.empNo},
+            #{info.pPension},
+            #{info.cPension},
+            #{info.pMedical},
+            #{info.cMedical},
+            #{info.pUnemployment},
+            #{info.cUnemployment},
+            #{info.cIndustrialInjury},
+            #{info.cMaternity},
+            #{info.pHousingFound},
+            #{info.cHousingFound}
+            )
+        </foreach>
+
+
+
+
+    </insert>
+
+
+</mapper>

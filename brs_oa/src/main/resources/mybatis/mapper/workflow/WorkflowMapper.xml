@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.brs.oa.workflow.mapper.WorkflowMapper">
+
+    <sql id="workflow_sql">
+        serial_number,
+        work_name,
+        applicant,
+        approver,
+        start_time,
+        end_time,
+        content,
+        flow_type,
+        application_time,
+        approval_status,
+        approval_time,
+        prove_img
+
+    </sql>
+
+    <sql id="where_applicant_sql">
+        <trim prefix="WHERE">
+            <if test="applicant != null"> applicant=#{applicant}</if>
+        </trim>
+    </sql>
+
+    <sql id="where_approver_sql">
+        <trim prefix="WHERE">
+            <if test="approver != null"> approver=#{approver}</if>
+        </trim>
+    </sql>
+    <insert id="insert">
+        INSERT  INTO  workflow
+        (
+         <include refid="workflow_sql"></include>
+        )VALUES (
+         #{workflow.workName},
+        #{workflow.applicant},
+        #{workflow.approver},
+         #{workflow.startTime},
+        #{workflow.endTime},
+        #{workflow.content},
+        #{workflow.flowType},
+        #{workflow.applicationTime},
+        #{workflow.approvalStatus},
+        #{workflow.approvalTime},
+        #{workflow.proveImg}
+
+        )
+
+
+    </insert>
+
+    <update id="update">
+        update workflow
+        set
+            approval_status = #{approvalStatus}
+        where
+            approver = #{approver} and serial_number = #{serialNumber}
+
+    </update>
+
+    <select id="selectListByApprover" resultType="com.brs.oa.workflow.entity.Workflow">
+        SELECT
+            <include refid="workflow_sql"></include>
+        FROM
+            workflow
+        <include refid="where_approver_sql"></include>
+
+    </select>
+
+    <select id="selectListByApplicant" resultType="com.brs.oa.workflow.entity.Workflow">
+        SELECT
+        <include refid="workflow_sql"></include>
+        FROM
+        workflow
+        <include refid="where_applicant_sql"></include>
+
+    </select>
+</mapper>

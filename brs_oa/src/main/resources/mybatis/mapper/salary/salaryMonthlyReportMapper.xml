@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.brs.oa.salary.mapper.SalaryMonthlyReportMapper">
+
+    <sql id="personSalaryInfo_column">
+        sm.settlement_day,
+        sm.emp_name,
+        sm.basic_Salary,
+        sm.workday_factor,
+        sm.commission,
+        sm.allowance,
+        sm.payment,
+        sm.housing_fund,
+        sm.social_insurance,
+        sm.tax_of_staff,
+        sm.payment_in_hand
+    </sql>
+
+    <sql id="select_sql_where">
+        <trim prefix="WHERE" suffixOverrides="AND | OR">
+            <if test="empNo != null"> sm.emp_no=#{empNo} AND </if>
+            <if test="startTime != null">sm.settlement_day &gt;= #{startTime} AND</if>
+            <if test="endTime !=null"> sm.settlement_day &lt;= #{endTime}</if>
+        </trim>
+    </sql>
+
+    <select id="queryPersonalSalaryList" resultType="com.brs.oa.salary.vo.SimpleSalaryVo">
+        SELECT
+            <include refid="personSalaryInfo_column"></include>
+        FROM
+            brs_oa_sys.salary_monthly as sm
+        <include refid="select_sql_where"></include>
+    </select>
+    <select id="querySalaryList" resultType="com.brs.oa.salary.vo.ComplexSalaryVo">
+        SELECT
+             *
+        FROM
+             brs_oa_sys.salary_monthly as sm
+         <include refid="select_sql_where"></include>
+
+    </select>
+
+
+</mapper>
+
