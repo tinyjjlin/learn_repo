@@ -405,3 +405,52 @@ git push --set-upstream origin test01
 把本地test01分支推送到远程
 
 git push origin dev:dev
+
+## git log
+```
+## abbrev 缩写
+git log --pretty=oneline --abbrev-commit
+git log --graph --pretty=oneline --abbrev-commit
+
+git merge --no-ff -m "merge with no-ff" dev
+```
+
+## git tag 标签管理
+```
+git push origin --tags
+```
+
+## 撤销修改
+```
+git checkout -- file
+```
+
+## git diff 文件对比
+1.  git diff  filepath 工作区与暂存区比较
+
+2. git diff HEAD filepath 工作区与HEAD ( 当前工作分支) 比较
+
+3. git diff --staged 或 --cached  filepath 暂存区与HEAD比较
+
+4. git diff branchName filepath  当前分支的文件与branchName 分支的文件进行比较
+
+5. git diff commitId filepath 与某一次提交进行比较
+
+## 设置比较工具 meld
+
+[diff]
+    tool = meld
+[difftool "meld"]
+    path = C:/Program Files (x86)/Meld/Meld.exe
+[merge]
+    tool = meld
+[mergetool "meld"]
+    path = C:/Program Files (x86)/Meld/Meld.exe
+
+## git 创建远程分支对应的本地分支 并关联远程分支
+git checkout --track origin/dev
+
+##git 创建本地分支并同时创建远程分支
+
+git checkout -b new_branch_name branch_name
+git push --set-upstream origin branch_name
