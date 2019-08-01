@@ -1,0 +1,10 @@
+# AD Config
+#ldap:
+#  url: "ldap://192.168.1.1:389"
+#  base: DC=example,DC=com
+#  userDn: "administrator@example.com"
+spring:
+  ldap:
+    embedded:
+      base-dn: dc=didispace,dc=com
+      ldif: ldap-server.ldif

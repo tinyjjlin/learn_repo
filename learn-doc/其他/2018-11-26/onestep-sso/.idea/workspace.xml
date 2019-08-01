@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/annotation/NeedPermissions.java" line="11" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3536d59-b7f9-430e-89d8-504c07d7d138" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="639284760">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="7" />
+          <entry key="java" value="51" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="7" />
+          <entry key="JAVA" value="51" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="3622" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="65" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="3622" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="65" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="2118324503">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="aj" value="2" />
+          <entry key="class" value="25" />
+          <entry key="dtd" value="1" />
+          <entry key="java" value="98" />
+          <entry key="properties" value="2" />
+          <entry key="xml" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="AspectJ" value="2" />
+          <entry key="CLASS" value="25" />
+          <entry key="DTD" value="1" />
+          <entry key="JAVA" value="98" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="aj" value="24" />
+          <entry key="class" value="2" />
+          <entry key="dummy" value="49" />
+          <entry key="java" value="10761" />
+          <entry key="properties" value="12" />
+          <entry key="xml" value="129" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="AspectJ" value="24" />
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="10761" />
+          <entry key="PLAIN_TEXT" value="49" />
+          <entry key="Properties" value="12" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="128" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1047407641">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="5" />
+          <entry key="java" value="223" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="5" />
+          <entry key="JAVA" value="223" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="70" />
+          <entry key="java" value="21563" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="21563" />
+          <entry key="PLAIN_TEXT" value="70" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/service/UserSerivce.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/util/StrUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/interceptor/AuthInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="99" column="34" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/filter/StreamHttpServletRequestWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/OaApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="34" column="40" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/annotation/RequestFieldAuth.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/fieldAuth/FieldAuthInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="115" column="13" selection-start-line="110" selection-start-column="8" selection-end-line="115" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/service/impl/FieldServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/util/JsonUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-92">
+              <caret line="133" column="5" lean-forward="true" selection-start-line="89" selection-end-line="133" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Aspect" />
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/comm/annotation/ResponseFieldAuth.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/controller/SalaryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/comm/apect/ResponseFieldAuthAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/MetaSetter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/service/SysService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/authentication/LoginUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/authentication/model/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/authentication/model/Permission.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/authentication/model/LoginUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/authentication/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/authentication/exception/CustomException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/authentication/mapper/LoginUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/authentication/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/authentication/service/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/model/Permission.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/mapper/LoginUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/exception/CustomException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/controller/ExceptionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/model/LoginUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/comm/jwt/TokenClaimFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/service/impl/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/comm/jwt/JWTUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/comm/jwt/JwtSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/SysDataResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/model/FieldSchema.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/fieldAuth/Filterable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/fieldAuth/DataResourceAuthInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/util/CommonUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/fieldAuth/QueryFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/model/dto/UserDTO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brs/oa/ServiceTest/UserServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/FilterableResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/DataResourceAuthInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/Filterable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/SysUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/QueryFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/fieldAuth/FilterableResult.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brs/oa/ServiceTest/DataFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/mapper/FieldMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/fieldAuth/MetaSetter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/fieldAuth/FieldAuthInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/comm/fieldAuth/FieldAuthInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/comm/annotation/RequestFieldAuth.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/service/impl/FieldServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/comm/interceptor/AuthInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brs/oa/util/JsonUtil.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../install/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="C:\dev\storage\maven\config\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-303" />
+    <option name="y" value="150" />
+    <option name="width" value="1747" />
+    <option name="height" value="959" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="onestep-sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onestep-sso" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onestep-sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onestep-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onestep-sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onestep-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onestep-sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onestep-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onestep-sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onestep-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onestep-sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onestep-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onestep-sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onestep-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543226200491" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\IdeaProjects\oa\src\main\resources\mybatis\mapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.brs.oa" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.brs.oa.fieldAuth" />
+      <recent name="com.brs.oa.exception" />
+      <recent name="com.brs.oa.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\IdeaProjects\oa\src\main\java\com\brs\oa" />
+      <recent name="C:\dev\oa\src\main\java\mapper" />
+      <recent name="C:\dev\oa\src\main\java\com\brs\oa" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OaApplication">
+    <configuration name="JWTUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.brs.oa.comm.jwt.JWTUtil" />
+      <module name="oa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brs.oa.comm.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StrUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.brs.oa.util.StrUtil" />
+      <module name="oa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brs.oa.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataFilterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brs.oa.ServiceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.brs.oa.ServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.brs.oa.ServiceTest.DataFilterTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginUserMapperTest.queryPermission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brs.oa.mapperTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.brs.oa.mapperTest" />
+      <option name="MAIN_CLASS_NAME" value="com.brs.oa.mapperTest.LoginUserMapperTest" />
+      <option name="METHOD_NAME" value="queryPermission" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.findUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brs.oa.ServiceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.brs.oa.ServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.brs.oa.ServiceTest.UserServiceTest" />
+      <option name="METHOD_NAME" value="findUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.brs.oa.OaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.OaApplication" />
+      <item itemvalue="Application.JWTUtil" />
+      <item itemvalue="Application.StrUtil" />
+      <item itemvalue="JUnit.LoginUserMapperTest.queryPermission" />
+      <item itemvalue="JUnit.DataFilterTest.test" />
+      <item itemvalue="JUnit.UserServiceTest.findUser" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceTest.findUser" />
+        <item itemvalue="JUnit.DataFilterTest.test" />
+        <item itemvalue="JUnit.LoginUserMapperTest.queryPermission" />
+        <item itemvalue="Application.StrUtil" />
+        <item itemvalue="Application.JWTUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3536d59-b7f9-430e-89d8-504c07d7d138" name="Default Changelist" comment="" />
+      <created>1542591094763</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542591094763</updated>
+      <workItem from="1542591100318" duration="14050000" />
+      <workItem from="1542675391069" duration="1211000" />
+      <workItem from="1542684748988" duration="1474000" />
+      <workItem from="1542687340664" duration="15257000" />
+      <workItem from="1542761892382" duration="34988000" />
+      <workItem from="1542847213524" duration="36703000" />
+      <workItem from="1542933838169" duration="9784000" />
+      <workItem from="1543193018767" duration="29183000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DataFilterTest_test - 2018.11.23 at 10h 36m 42s.xml">
+      <configuration name="DataFilterTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataFilterTest_test - 2018.11.23 at 10h 37m 41s.xml">
+      <configuration name="DataFilterTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataFilterTest_test - 2018.11.23 at 10h 37m 54s.xml">
+      <configuration name="DataFilterTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataFilterTest_test - 2018.11.23 at 10h 38m 07s.xml">
+      <configuration name="DataFilterTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataFilterTest_test - 2018.11.23 at 10h 40m 28s.xml">
+      <configuration name="DataFilterTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataFilterTest_test - 2018.11.23 at 10h 41m 42s.xml">
+      <configuration name="DataFilterTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataFilterTest_test - 2018.11.23 at 11h 00m 56s.xml">
+      <configuration name="DataFilterTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataFilterTest_test - 2018.11.23 at 11h 01m 38s.xml">
+      <configuration name="DataFilterTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_findUser - 2018.11.26 at 14h 36m 40s.xml">
+      <configuration name="UserServiceTest.findUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_findUser - 2018.11.26 at 14h 38m 44s.xml">
+      <configuration name="UserServiceTest.findUser" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="142650000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="288" y="37" width="1747" height="959" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78470254" visible="true" weight="0.25489035" />
+      <window_info id="Structure" order="1" sideWeight="0.21529745" side_tool="true" visible="true" weight="0.25489035" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.55218446" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49942395" visible="true" weight="0.14320388" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.500576" side_tool="true" weight="0.8394333" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3276699" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32969698" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/controller/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../storage/maven/repo/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE-sources.jar!/org/springframework/util/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+          <folding>
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3087#3088#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/interceptor/CustomResponseBodyAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/jwt/JWTUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/controller/SalaryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/jwt/JwtSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="26" column="63" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/jwt/TokenClaimFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/jwt/TokenClaim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/model/dto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/model/LoginUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="25" column="88" lean-forward="true" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/SysDataResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-638">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/MetaSetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/util/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/apect/FieldAuthApsectOld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="44" column="2" lean-forward="true" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/apect/FieldAuthAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/fieldAuth/QueryFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/mapper/LoginUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="16" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/model/dto/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brs/oa/ServiceTest/SalaryServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/FilterableResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="34" column="39" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/QueryFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="37" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/Filterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="19" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brs/oa/ServiceTest/DataFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" lean-forward="true" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brs/oa/ServiceTest/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/mapper/FieldMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/SysUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/datafilter/DataResourceAuthInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1147">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="e#0#3624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/fieldAuth/MetaSetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/fieldAuth/FilterableResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/fieldAuth/Filterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/fieldAuth/FieldSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../storage/maven/repo/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/apect/ResponseFieldAuthAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="42" column="45" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="42" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../storage/maven/repo/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSONArray.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../storage/maven/repo/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#7376#7377#0" expanded="true" />
+            <element signature="e#7416#7417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/service/UserSerivce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/util/StrUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/fieldAuth/FieldAuthInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="115" column="13" selection-start-line="110" selection-start-column="8" selection-end-line="115" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/OaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/annotation/RequestFieldAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/service/impl/FieldServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/filter/StreamHttpServletRequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/comm/interceptor/AuthInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="99" column="34" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brs/oa/util/JsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="133" column="5" lean-forward="true" selection-start-line="89" selection-end-line="133" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
